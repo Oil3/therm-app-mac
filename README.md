@@ -7,10 +7,10 @@ Since then, blablabla
 
 
 
-# dec2024 : successful communication and raw frames are received
-
+# dec2024 : successful communication and raw frames are received, however still a mess and **needs much more work**
+# I need to figure out calibration and/or proper offset values
 No driver and no kernel needed.  
-The command line tools use [libusb](https://libusb.info/) and are based on the [public debug code](https://github.com/Pidbip/ThermAppCam),  
+The command line tools use [libusb](https://libusb.info/) and are based on the [public debug code](https://github.com/Pidbip/ThermAppCam). Built in C.
 
 The Swift app is 100% native and is inspired from [Didaktek's Simple-USB](https://github.com/didactek/deft-simple-usb) and [ftdi-synchronous-serial](https://github.com/didactek/ftdi-synchronous-serial).  
 
@@ -20,5 +20,21 @@ Everything is notarized and hardened.
 Usi
 How:
 both command line tools expect libusb at `/opt/homebrew/lib/libusb-1.0.dylib` 
-notarized/gatekeeper approved but needs to be ran inside terminal.
-the swift app technically needs nothing, but until the why is figured out, it only recognizes the device once one of the command line tools has connected and exited once.
+notarized/gatekeeper approved but needs to be ran inside terminal.  
+
+The swift app technically needs nothing, but until the why is figured out, it only recognizes the device after one of the command line tools has connected and exited at least once.
+
+
+CLI 
+`mac-thermapp-libusb` fetches and saves 50 raw frames (frame_%04d.raw).
+`thermapp_ffmpeg` uses ffmpeg to fetch 1000 frames and saves a .mp4 (out.mp4) video.
+
+
+
+The first succesful connection, albeit slightly off-the-charts![image](https://github.com/user-attachments/assets/14af3cde-cebc-459e-8cac-d0cc6eced568)
+
+
+here I'm passing a lighter in front.
+
+https://github.com/user-attachments/assets/ca8ab25b-df41-431f-99d1-fcb387015aa8
+
