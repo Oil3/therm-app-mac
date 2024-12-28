@@ -11,8 +11,8 @@ Since then, blablabla
 
 No driver and no kernel needed.  
 The command line tools use libusb.  
-The Swift app is 100$ native.  
-Everything is vvnotarized and hardened.
-v
+The Swift app is 100% native.  
+Everything is notarized and hardened.
 
-Usimg 
+
+Usi
