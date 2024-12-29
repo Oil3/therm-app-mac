@@ -17,7 +17,7 @@ The Swift app is 100% native and is inspired from [Didaktek's Simple-USB](https:
 Everything is notarized and hardened.
 
 
-Usi
+
 How:
 both command line tools expect libusb at `/opt/homebrew/lib/libusb-1.0.dylib` 
 notarized/gatekeeper approved but needs to be ran inside terminal.  
@@ -32,6 +32,7 @@ CLI
 
 
 The first succesful connection, albeit slightly off-the-charts![image](https://github.com/user-attachments/assets/14af3cde-cebc-459e-8cac-d0cc6eced568)
+Getting better, it's actually 35celcius, but outside, and still a lot of flickering and still nowhere near the CLI tool - which itself is still very bad![image](https://github.com/user-attachments/assets/ba353980-bb10-40a0-8fa9-98fec1f0cf00)
 
 
 here I'm passing a lighter in front.
