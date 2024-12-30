@@ -21,9 +21,11 @@ Everything is notarized and hardened.
 
 How:
 both command line tools expect libusb at `/opt/homebrew/lib/libusb-1.0.dylib` 
-notarized/gatekeeper approved but needs to be ran inside terminal.  
+notarized/gatekeeper approved but needs to be launched from terminal.  
 
-The swift app technically needs nothing, but until the why is figured out, it only recognizes the device after one of the command line tools has connected and exited at least once.
+The swift app technically needs nothing, but until the why is figured out, it only recognizes the device after one of the command line tools has connected and exited at least once. Doing so actually creates a new row `"Current Required"`, inside macOS' System Information:
+![image](https://github.com/user-attachments/assets/35390954-fd6f-4a34-9524-690b52cae8a0)
+
 
 
 CLI 
