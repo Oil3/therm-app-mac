@@ -15,13 +15,14 @@ The command line tools use [libusb](https://libusb.info/) and are based on the [
 
 The Swift app is 100% native and is inspired from [Didaktek's Simple-USB](https://github.com/didactek/deft-simple-usb) and [ftdi-synchronous-serial](https://github.com/didactek/ftdi-synchronous-serial).  
 
-Everything is notarized and hardened.
+Everything is notarized and hardened, which you can check for non .app that have
 
 
 
 How:
 both command line tools expect libusb at `/opt/homebrew/lib/libusb-1.0.dylib` 
-notarized/gatekeeper approved but needs to be launched from terminal.  
+notarized/gatekeeper approved but might need to be launched from terminal.
+One can check notarization of command-line tools (and others that can't have an embedded staple) with `spctl -assess --verbose --type install filepath`
 
 The swift app technically needs nothing, but until the why is figured out, it only recognizes the device after one of the command line tools has connected and exited at least once. Doing so actually creates a new row `"Current Required"`, inside macOS' System Information:
 ![image](https://github.com/user-attachments/assets/35390954-fd6f-4a34-9524-690b52cae8a0)
