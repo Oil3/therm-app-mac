@@ -39,7 +39,7 @@ The first succesful connection, albeit slightly off-the-charts![image](https://g
 Getting better, it's actually 35celcius, but outside, and still a lot of flickering and still nowhere near the CLI tool - which itself is still very bad![image](https://github.com/user-attachments/assets/ba353980-bb10-40a0-8fa9-98fec1f0cf00)
 
 
-here I'm passing a lighter in front; using the ffmpeg command line tool - that one I need to notarize but it's a slightly complex process; God willing, soon I do that
+here I'm passing a lighter in front; using the ffmpeg command line tool - that one I need to notarize still
 
 https://github.com/user-attachments/assets/ca8ab25b-df41-431f-99d1-fcb387015aa8
 
