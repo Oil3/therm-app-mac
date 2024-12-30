@@ -1,14 +1,15 @@
-## therm-app-mac
+## therm-app-mac 
+
 Mac OS app for Opgal's "Therm-app" thermal camera. work-in-progress, that works.
 
-Last time I had used my thermapp 25hz was right before the pandemic, clients weren't plentiful.  I had the idea of using this tiny tablet to go ask the nail salon`s manager if she wanted me to _tomarle tu temperatura_.  Good laugh, 36celcius, and almost no battery already. I also learnt you could actually turn the lense to focus; a whole new world.
----
+`Last time I had used my thermapp 25hz was right before the pandemic, clients weren't plentiful.  I took the restaurant's tablet and went and asked the next door nail salon's manager if she wanted me to _tomarle tu temperatura_.  Good laugh, 36celcius, and almost no battery already. I also learnt you could actually turn the lense to focus; a whole new world.`
+
 
 Very happy as I trust there is finally a use for this relatively pricey tool. 
 
 
-#3 dec2024 : successful communication and raw frames are received, however still a mess and **needs much more work**
-## The issue now is figuring out where in the packet chunks does the pixel data (the image we want) starts. I.e. at what byte offset do we parse the 384x288 following bytes;  Same for temperature.
+## dec2024 : successful communication and raw frames are received, however still a mess and **needs much more work**
+### The issue now is figuring out where in the packet chunks does the pixel data (the image we want) starts. I.e. at what byte offset do we parse the 384x288 following bytes;  Same for temperature.
 No driver and no kernel needed.  
 The command line tools use [libusb](https://libusb.info/) and are based on the [public debug code](https://github.com/Pidbip/ThermAppCam). Built in C.
 
