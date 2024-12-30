@@ -8,7 +8,7 @@ Since then, blablabla
 
 
 # dec2024 : successful communication and raw frames are received, however still a mess and **needs much more work**
-# I need to figure out calibration and/or proper offset values
+## The issue now is figuring out where in the packet chunks does the pixel data (the image we want) starts. I.e. at what byte offset do we parse the 384x288 following bytes;  Same for temperature.
 No driver and no kernel needed.  
 The command line tools use [libusb](https://libusb.info/) and are based on the [public debug code](https://github.com/Pidbip/ThermAppCam). Built in C.
 
