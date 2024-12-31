@@ -11,7 +11,7 @@ Very happy as I trust there is finally a use for this relatively pricey tool.
 ## dec2024 : successful communication and raw frames are received, however still a mess and **needs much more work** for the Swift app.
 ### For the Swift app, the issue now is figuring out where in the packet chunks does the pixel data (the image we want) starts. I.e. at what byte offset do we parse the 384x288 following bytes;  Same for temperature.
 No driver and no kernel needed.  
-The command line tools use [libusb](https://libusb.info/) and are based on the [public debug code](https://github.com/Pidbip/ThermAppCam). Built in C.
+The command line tools use [libusb](https://libusb.info/) (so does the official Android apk), and are based on the [public debug code](https://github.com/Pidbip/ThermAppCam). 
 
 The Swift app is 100% native and is inspired from [Didaktek's Simple-USB](https://github.com/didactek/deft-simple-usb) and [ftdi-synchronous-serial](https://github.com/didactek/ftdi-synchronous-serial).  
 
