@@ -21,7 +21,7 @@ Everything is notarized and hardened.
 `clang thermapp.c thermapp_main.c -I/opt/homebrew/include \
 -L/opt/homebrew/lib -lusb-1.0 -lpthread \
 -o thermapp`
-or `thermapp_ffmpeg.c` instead of `thermapp_main.c`
+or `thermapp_ffmpeg.c` instead of `thermapp_main.c`.  
 I installed `libusb` with `brew install libusb` . Besides trying to update Python (insane thing), Homebrew has never made me lose time.
 ### Compiling the  CLI tools in Xcode
 Command-line-tool as target, C as language, add info.plist in build settings, set a bundle name, set search paths for the libusb, setup hardened runtime in capability and authorize the library, automatic signing management with a Developper ID Application certificate, ,,, , compile and archive, zip the executable and finally upload for notarization via 'notarytool'.
