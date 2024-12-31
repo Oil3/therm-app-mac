@@ -152,3 +152,5 @@ int main(void)
     printf("Done. Wrote out.mp4.\n");
     return 0;
 }
+// https://github.com/Oil3/therm-app-mac
+// Quet Almahdi Morris - 2024 github.com/oil3
