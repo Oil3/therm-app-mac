@@ -6,11 +6,17 @@ Mac OS app for Opgal's "Therm-app" thermal camera. work-in-progress, that works.
 
 
 Very happy as I trust there is finally a use for this relatively pricey tool. 
+No driver nor kernel nor 'sudo' needed.  
 
 
-## dec2024 : successful communication and raw frames are received, however still a mess and **needs much more work** for the Swift app.
-### For the Swift app, the issue now is figuring out where in the packet chunks does the pixel data (the image we want) starts. I.e. at what byte offset do we parse the 384x288 following bytes;  Same for temperature.
-No driver and no kernel needed.  
+## jan2025 : now we can see something.
+https://github.com/user-attachments/assets/d551f93d-7b25-4452-9184-69ab6e19cdb3
+
+https://github.com/user-attachments/assets/d2dffa27-8ca5-4594-8966-9e2b99d725fc
+
+
+###  I found the proper offsets
+
 The command line tools use [libusb](https://libusb.info/) (so does the official Android apk), and are based on the [public debug code](https://github.com/Pidbip/ThermAppCam). 
 
 The Swift app is 100% native and is inspired from [Didaktek's Simple-USB](https://github.com/didactek/deft-simple-usb) and [ftdi-synchronous-serial](https://github.com/didactek/ftdi-synchronous-serial).  
@@ -36,17 +42,14 @@ The swift app technically needs nothing, but until the why is figured out, it on
 
 
 
+
+
 CLI 
 `mac-thermapp-libusb` fetches and saves 50 raw frames (frame_%04d.raw).
 `thermapp_ffmpeg` uses ffmpeg to fetch 1000 frames and saves a .mp4 (out.mp4) video.
 
 
 
-The first succesful connection, albeit slightly off-the-charts![image](https://github.com/user-attachments/assets/14af3cde-cebc-459e-8cac-d0cc6eced568)
-Getting better, it's actually 35celcius, but outside, and still a lot of flickering and still nowhere near the CLI tool - which itself is still very bad![image](https://github.com/user-attachments/assets/ba353980-bb10-40a0-8fa9-98fec1f0cf00)
+Getting better, it's 25celcius, I don't know why image is flipped and rotated.
 
-
-here I'm passing a lighter in front; using the ffmpeg command line tool - that one I need to notarize still but you can compile yourself as well
-
-https://github.com/user-attachments/assets/ca8ab25b-df41-431f-99d1-fcb387015aa8
-
+https://github.com/user-attachments/assets/d551f93d-7b25-4452-9184-69ab6e19cdb3
