@@ -49,7 +49,7 @@ CLI
 `thermapp_ffmpeg` uses ffmpeg to fetch 1000 frames and saves a .mp4 (out.mp4) video.
 
 
-
+I use a micro-usb to usb-c Anker branded cable.    
 Getting better, it's 25celcius, I don't know why image is flipped and rotated.
 
 https://github.com/user-attachments/assets/d551f93d-7b25-4452-9184-69ab6e19cdb3
