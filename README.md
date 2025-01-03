@@ -2,10 +2,6 @@
 
 Mac OS app for Opgal's "Therm-app" thermal camera. work-in-progress, that works.
 
-`Last time I had used my thermapp 25hz was right before the pandemic, clients weren't plentiful.  I took the restaurant's tablet and went and asked the next door nail salon's manager if she wanted me to _tomarle tu temperatura_.  Good laugh, 36celcius, and almost no battery already. I also learnt you could actually turn the lense to focus; a whole new world.`
-
-
-Very happy as I trust there is finally a use for this relatively pricey tool. 
 No driver nor kernel nor 'sudo' needed.  
 
 
